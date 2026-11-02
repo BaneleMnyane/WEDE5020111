@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry | Book or Request a Service from B4NEXX</title>
+    <meta name="description" content="Send an enquiry to B4NEXX about live performance bookings, music production, songwriting or song features. Fill in the form and get a summary straight away.">
+    <meta name="keywords" content="B4NEXX enquiry, book hip-hop artist, music production enquiry, songwriting request, feature request, live performance booking, South Africa">
+    <meta name="author" content="B4NEXX">
+    <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <p class="site-logo">🏴‍☠️ B4NEXX 🏴‍☠️</p>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">&#9776; Menu</button>
+        <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="discography.html">Discography</a>
+            <a href="services.html">Services</a>
+            <a href="contacts.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="enquiry.html" aria-current="page">Enquiry</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <p class="eyebrow">Enquiry</p>
+            <h1>Start a Project</h1>
+            <p>Tell me what you need and I will come back to you using your preferred method.</p>
+        </section>
+
+        <section class="form-section" aria-labelledby="enquiry-heading">
+            <form class="form-card" id="enquiry-form" novalidate>
+                <h2 id="enquiry-heading">Enquiry Form</h2>
+                <p class="form-note">Fields marked <span class="required" aria-hidden="true">*</span><span class="sr-only"> with an asterisk</span> are required.</p>
+
+                <div class="form-status error-state" id="form-error-summary" role="alert" hidden></div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First name <span class="required" aria-hidden="true">*</span></label>
+                        <input type="text" id="first-name" name="first_name" autocomplete="given-name" required maxlength="50" data-validate="name" data-label="your first name" aria-describedby="first-name-error">
+                        <small class="error" id="first-name-error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname">Surname <span class="required" aria-hidden="true">*</span></label>
+                        <input type="text" id="surname" name="surname" autocomplete="family-name" required maxlength="50" data-validate="name" data-label="your surname" aria-describedby="surname-error">
+                        <small class="error" id="surname-error"></small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email address <span class="required" aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" autocomplete="email" required data-validate="email" data-label="your email address" aria-describedby="email-error">
+                        <small class="error" id="email-error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone number (optional)</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="082 123 4567" data-validate="phone" data-label="your phone number" aria-describedby="phone-error">
+                        <small class="error" id="phone-error"></small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="enquiry-type">Type of enquiry <span class="required" aria-hidden="true">*</span></label>
+                        <select id="enquiry-type" name="enquiry_type" required data-validate="select" data-label="an enquiry type" aria-describedby="enquiry-type-error">
+                            <option value="">Choose an option</option>
+                            <option value="booking">Live performance booking</option>
+                            <option value="production">Music production</option>
+                            <option value="songwriting">Songwriting</option>
+                            <option value="feature">Song feature or collaboration</option>
+                            <option value="other">Something else</option>
+                        </select>
+                        <small class="error" id="enquiry-type-error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferred-date">Preferred date (optional)</label>
+                        <input type="date" id="preferred-date" name="preferred_date" data-validate="date" data-label="a date" aria-describedby="preferred-date-error">
+                        <small class="error" id="preferred-date-error"></small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <fieldset id="contact-method" role="radiogroup" data-group data-message="Please choose how you would like me to reply." aria-describedby="contact-method-error">
+                        <legend>Preferred reply method <span class="required" aria-hidden="true">*</span></legend>
+                        <div class="radio-group">
+                            <label><input type="radio" id="method-email" name="contact_method" value="Email"> Email</label>
+                            <label><input type="radio" id="method-phone" name="contact_method" value="Phone call"> Phone call</label>
+                            <label><input type="radio" id="method-whatsapp" name="contact_method" value="WhatsApp"> WhatsApp</label>
+                        </div>
+                    </fieldset>
+                    <small class="error" id="contact-method-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your message <span class="required" aria-hidden="true">*</span></label>
+                    <textarea id="message" name="message" required minlength="20" maxlength="1000" data-validate="message" data-label="your message" aria-describedby="message-error message-count" placeholder="Tell me about your project, event or idea"></textarea>
+                    <small class="error" id="message-error"></small>
+                    <p class="char-count" id="message-count" data-counter-for="message"></p>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="consent" name="consent" value="Yes" required data-validate="checkbox" aria-describedby="consent-error">
+                        <span>I agree to be contacted about this enquiry. <span class="required" aria-hidden="true">*</span></span>
+                    </label>
+                    <small class="error" id="consent-error"></small>
+                </div>
+
+                <div class="hp" aria-hidden="true">
+                    <label for="website">Leave this field empty</label>
+                    <input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="button">Send Enquiry</button>
+                    <button type="reset" class="button button-outline">Clear Form</button>
+                </div>
+            </form>
+
+            <section class="form-card" id="enquiry-response" tabindex="-1" aria-live="polite" hidden>
+                <h2>Thank you, <span id="resp-name"></span>!</h2>
+                <p id="resp-intro"></p>
+                <dl class="summary-list" id="resp-summary"></dl>
+                <h3>What happens next</h3>
+                <p id="resp-next"></p>
+                <p>If it is urgent, email <a href="mailto:b4nexx619@gmail.com">b4nexx619@gmail.com</a>.</p>
+                <button type="button" class="button" id="new-enquiry">Send Another Enquiry</button>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> B4NEXX. All rights reserved.</p>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/enquiry.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
