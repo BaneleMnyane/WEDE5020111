@@ -2,9 +2,9 @@
 
 Official artist website for **B4NEXX**, an independent Hip-Hop and R&B artist and producer from South Africa. Built as the Part 3 portfolio of evidence (POE) for the Web Development module.
 
-- **Live site:** https://YOUR-USERNAME.github.io/YOUR-REPO/
-- **Repository:** https://github.com/YOUR-USERNAME/YOUR-REPO
-- **Student:** [Your full name], ST10534010
+- **Live site:** https://github.com/BaneleMnyane/b4nexx-website.git
+- **Repository:** https://github.com/BaneleMnyane/b4nexx-website.git
+- **Student:** Banele Mnyane, ST10534010
 
 ## Purpose
 

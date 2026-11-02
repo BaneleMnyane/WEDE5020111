@@ -4,4 +4,4 @@ User-agent: *
 Allow: /
 
 # Replace with your real deployed address before submitting
-Sitemap: https://YOUR-USERNAME.github.io/YOUR-REPO/sitemap.xml
+Sitemap: https://github.com/BaneleMnyane/b4nexx-website.git 
